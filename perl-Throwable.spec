@@ -30,6 +30,9 @@ Requires:       perl(Sub::Quote)
 %{?perl_default_filter}
 
 %description
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 Throwable is a role for classes that are meant to be thrown as exceptions
 to standard program flow. It is very simple and does only two things: saves
 any previous value for $@ and calls die $self.
