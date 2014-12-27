@@ -64,6 +64,13 @@ RELEASE_TESTING=1 make test
 %{_mandir}/man3/*
 
 %changelog
+* Sat Dec 27 2014 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.200011-10
+- Adapt for AL/LL
+- Add package support URL
+- Update spec file
+- Import `Throwable-0.200011.tar.gz`
+- Import spec file FC20/perl-Throwable-0.102080-10.fc20
+
 * Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.102080-10
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
