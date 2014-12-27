@@ -1,5 +1,5 @@
 Name:           perl-Throwable
-Version:        0.102080
+Version:        0.200011
 Release:        10%{?dist}
 Summary:        Role for classes that can be thrown
 License:        GPL+ or Artistic
@@ -7,18 +7,25 @@ Group:          Development/Libraries
 URL:            http://search.cpan.org/dist/Throwable/
 Source0:        http://www.cpan.org/authors/id/R/RJ/RJBS/Throwable-%{version}.tar.gz
 BuildArch:      noarch
-BuildRequires:  perl(Devel::StackTrace) >= 1.21
+BuildRequires:  perl(Devel::StackTrace) >= 1.30
 BuildRequires:  perl(ExtUtils::MakeMaker) >= 6.11
-BuildRequires:  perl(Moose) >= 0.87
 BuildRequires:  perl(Test::More)
 BuildRequires:  perl(Test::Pod)
 BuildRequires:  perl(Test::Pod::Coverage)
 BuildRequires:  perl(Pod::Coverage::TrustPod)
+BuildRequires:  perl(Module::Runtime) >= 0.002
+BuildRequires:  perl(Moo) >= 1.000001
+BuildRequires:  perl(Moo::Role)
+BuildRequires:  perl(Sub::Quote)
+BuildRequires:  perl(version)
 
-Requires:       perl(Devel::StackTrace) >= 1.21
+Requires:       perl(Devel::StackTrace) >= 1.30
 Requires:       perl(ExtUtils::MakeMaker) >= 6.11
-Requires:       perl(Moose) >= 0.87
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
+Requires:       perl(Module::Runtime) >= 0.002
+Requires:       perl(Moo) >= 1.000001
+Requires:       perl(Moo::Role)
+Requires:       perl(Sub::Quote)
 
 %{?perl_default_filter}
 
