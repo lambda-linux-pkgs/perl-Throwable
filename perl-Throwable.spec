@@ -1,6 +1,8 @@
+%define _buildid .2
+
 Name:           perl-Throwable
 Version:        0.200011
-Release:        10%{?dist}
+Release:        10%{?_buildid}%{?dist}
 Summary:        Role for classes that can be thrown
 License:        GPL+ or Artistic
 Group:          Development/Libraries
